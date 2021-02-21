@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Basic banking system-customers</title>
+  <link rel="stylesheet" href="css/styles2.css">
+
+
+  <link rel="icon" href="icon.png">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+  <script src="https://use.fontawesome.com/07d62e5a9f.js"></script>
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  <section id="title">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="main-text">Transactions</h1>
+        <a href="Home.html"><button type="button" class="btn btn-primary btn-lg">Home</button></a>
+        <button type="button" class="btn btn-primary btn-lg" onclick="openForm()">Transfer Money</button>
+        <div class="form-popup" id="myForm">
+          
+            <form action="#" method="post" class="form-container"> 
+
+              
+            <label for="email"><b>Transfer from:</b></label>
+            <input id= "email" type="text" placeholder="Enter Email" name="emailfrom" required>
+            
+            <label for="email"><b>Transfer To:</b></label>
+            <input id= "email" type="text" placeholder="Enter Email" name="emailto" required>
+
+
+            <label for="amount"><b>Amount:</b></label>
+            <input id="amount" type="text" placeholder="Enter Amount" name="amount" required>
+
+            <button type="submit" class="btn1" onclick="transferaccess()">Transfer</button>
+
+            <button type="button" class="btn1 cancel" onclick="closeForm()">Close</button>
+           </form>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"  target = _blank><img src="https://www.paho.org/sites/default/files/styles/flexslider_full/public/2020-03/blue-covid-banner.jpg?h=96546727&itok=cZemcbKa
+            " class="title-image" alt="customer-satisfaction" width="100%" " ></a>
+        <p class="covid-text">Protect yourself and others from COVID-19.</p>
+      </div>
+    </div>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+
+
+  </section>
+
+
+  <!-- Second section for customer table -->
+  <section id="customer-table">
+    <h1>Customer Details</h1>
+    <table id="employee_grid" class="table" width="100%" cellspacing="0">
+		    <tr>
+			    <th>Customer ID</th>
+			    <th>Customer Email</th>
+			    <th>Bank Balance</th>
+		    </tr> 
+
+<tr><td>Gautam</td> <td>gautamanimesh3@gmail.com</td> <td>2000</td></tr><tr><td>Shivansh</td> <td>shivansh@gmail.com</td> <td>1900</td></tr><tr><td>Ashutosh</td> <td>ashutosh@gmail.com</td> <td>1600</td></tr><tr><td>Aditia</td> <td>aditia@gmail.com</td> <td>1200</td></tr><tr><td>Vishwas</td> <td>vishwas@gmail.com</td> <td>2200</td></tr><tr><td>Madhvan</td> <td>madhvan@gmail.com</td> <td>2500</td></tr><tr><td>Ankit</td> <td>ankit@gmail.com</td> <td>2400</td></tr><tr><td>Vaibhav</td> <td>vaibhav@gmail.com</td> <td>3000</td></tr><tr><td>Shreya</td> <td>shreya@gmail.com</td> <td>3500</td></tr></table>
+
+</table>
+
+</section>
+ 
+
+
+    <!-- Call to Action -->
+
+    <section id="cta" class="coloured-section">
+        <button type="button" class="btn btn-light">  
+            <h3 class="main-text" style="color: rgb(233, 104, 233);">
+              Task 1: Basic Banking System.
+              Designed by N Gautam Animesh under the <u><a href="https://www.thesparksfoundationsingapore.org/join-us/internship-positions/" target="_blank">Internship of The Sparks Foundation</u></a>.</h3>  </button>
+
+
+    <Footer>
+
+  
+    <a href="https://github.com/gautamanimesh" target="_blank" alt = "#" ><button type="button" class="btn btn-dark">Visit my works</button></a>
+    <footer id="footer" class="white-section">
+        <i class="social-icon fa fa-twitter" aria-hidden="true"></i>
+        <i class="social-icon fa fa-facebook-square" aria-hidden="true"></i>
+        <i class="social-icon fa fa-instagram" aria-hidden="true"></i>
+        <i class="social-icon fa fa-envelope" aria-hidden="true"></i>
+      <p style="color: white;">© Copyright 2021 The Sparks Bank.</p>
+       </footer>
+
+  </section>
+
+
+</body>
+
+
+
+
+</html>

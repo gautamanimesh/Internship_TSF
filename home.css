@@ -1,0 +1,98 @@
+#id1{
+   background-image: url(https://images.unsplash.com/photo-1531972111231-7482a960e109?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80);
+   background-position: center center;
+ 
+}
+
+.firstpage{
+ 
+     width: 100%;
+    height: 100vh;
+ 
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+   margin: 10px 10px;
+    margin-top: -40px;
+    padding: 4px;
+    border-radius: 25px;
+}
+
+ul{
+    display: inline;
+    text-align: center center;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    float:right;
+    margin-left: 12px;
+   
+    margin: 2px 2px;
+
+    
+}
+.image1{
+    display: block;
+    margin-left: auto;
+    margin-right: 520px;
+    width: 30%;
+    /* border-radius: 100%; */
+
+
+}
+.photosection{
+  margin-right: 150px;
+   padding: 40px; 
+   align-items: center;
+   justify-content: center;
+   
+}
+.heading{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+.button1{
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+}
+.footer{
+    
+    /* margin-top: 70px;*/
+
+    transition: transform .2s;
+
+
+}
+
+.button1{
+    font-size: 25px;
+    border-color: tomato;
+    background-color: tomato;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.button1:hover {
+    transform: scale(1.4); 
+  }
+.button1:hover{
+    background-color: red;
+    color: wheat;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #f16472;
+    border-color: #f16472;
+    margin-left: 20px;
+}
+.bankintro{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
